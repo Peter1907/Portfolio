@@ -59,7 +59,7 @@ header button:hover {
   background-position: bottom right;
 }
 
-h1 {
+.section-1 h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -73,7 +73,7 @@ h1 {
   height: 124px;
 }
 
-h2 {
+.section-1 h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -119,4 +119,157 @@ h2 {
   background-color: #ca5400af;
   border-radius: 5px;
   padding: 4px 7px;
+}
+
+.works {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  justify-content: center;
+  row-gap: 20px;
+  margin-bottom: 120px;
+}
+
+.works h1 {
+  width: 327px;
+  height: 83px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+  color: #1c1a19;
+  border-bottom: 1px solid #212121;
+  margin-top: 120px;
+  justify-self: center;
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.card-1 p {
+  width: 327px;
+  height: 147px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin: 0;
+}
+
+.card-1 ul {
+  display: flex;
+  list-style-type: none;
+  align-self: flex-start;
+  padding-left: 0;
+  gap: 12px;
+}
+
+.card-1 li {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+}
+
+.works button {
+  align-self: flex-start;
+  font-family: 'Inter', sans-serif;
+  padding: 12px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #f55800;
+}
+
+.works button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #F55800;
+}
+
+.works h2 {
+  width: 327px;
+  height: 36px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #091E42;
+}
+
+.repeated-card {
+  width: 327px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./media/Img-Placeholder02.jpg');
+}
+
+.repeated-card h2 {
+  width: 295px;
+  height: 81px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  align-self: center;
+  color: #fff;
+}
+
+.repeated-card p {
+  width: 295px;
+  height: 87px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  align-self: center;
+}
+
+.repeated-card ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  gap: 12px;
+  margin-left: 16px;
+}
+
+.repeated-card li {
+  padding: 10px 12px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.repeated-card button {
+  align-self: stretch;
 }
