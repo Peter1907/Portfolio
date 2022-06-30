@@ -1,0 +1,91 @@
+body {
+    padding: 0;
+    margin: 0;
+     
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #3E3C3C;
+    height: 48px;
+    margin: 0;
+    padding: 0 8%;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+nav button {
+    margin-left: auto;
+    background-color: #ff6a0000;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+}
+
+nav button:hover {
+    background-color: #ca5400af;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #1C1A19;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 0 7%;
+    background-image: url('./media/Illustration-header.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+header {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #FF6B00;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFF5E1;
+    padding: 0;
+}
+
+.section-1 p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+.social-media {
+    display: flex;
+    gap: 5%;
+}
