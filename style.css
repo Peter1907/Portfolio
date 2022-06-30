@@ -1,0 +1,122 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #3e3c3c;
+  height: 48px;
+  margin: 0;
+  padding: 0 8%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.name a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header button {
+  margin-left: auto;
+  background-color: #ff6a0000;
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
+}
+
+header button:hover {
+  background-color: #ca5400af;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 0 5%;
+  background-image: url('./media/Untitled01.png');
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+h1 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  padding: 0;
+  margin: 10px;
+  width: 327px;
+  height: 124px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  padding: 0;
+  margin: 10px;
+  width: 327px;
+  height: 27px;
+}
+
+.section-1 p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 0;
+  margin: 10px;
+  width: 327px;
+  height: 123px;
+}
+
+.social-media {
+  display: flex;
+  gap: 2.5%;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 40px;
+}
+
+.social-media li {
+  background-color: #ff6a0000;
+  border-radius: 5px;
+  padding: 4px 7px;
+  list-style-type: none;
+}
+
+.social-media li:hover {
+  background-color: #ca5400af;
+  border-radius: 5px;
+  padding: 4px 7px;
+}
