@@ -42,10 +42,6 @@ header button {
   padding: 7px;
 }
 
-header button:hover {
-  background-color: #ca5400af;
-}
-
 .section-1 {
   display: flex;
   flex-direction: column;
@@ -193,13 +189,7 @@ header button:hover {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  background-color: #f55800;
-}
-
-.card-1 button:hover {
-  background-color: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
+  background-color: #f55b00;
 }
 
 .works h2 {
@@ -267,7 +257,6 @@ header button:hover {
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-  color: #091e42;
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
 }
@@ -282,13 +271,7 @@ header button:hover {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  background-color: #f55800;
-}
-
-.repeated-card button:hover {
-  background-color: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
+  background-color: #f55b00;
 }
 
 .about {
@@ -347,12 +330,6 @@ header button:hover {
   align-self: flex-start;
 }
 
-.about-me button:hover {
-  background-color: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
-}
-
 .about-me .line {
   border: 1px solid #fff;
   width: 327;
@@ -392,4 +369,19 @@ header button:hover {
 .lists .items li {
   margin: 30px;
   padding: 0;
+}
+
+* > button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+* > button:active {
+  background-color: #e05304;
+  color: #fff5e1;
+}
+
+header button:hover {
+  background-color: #ca5400af;
 }
