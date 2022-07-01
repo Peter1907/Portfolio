@@ -170,7 +170,7 @@ header button:hover {
   gap: 12px;
 }
 
-.card-1 li {
+.card-1 ul > * {
   padding: 10px 12px;
   border: 1px solid #8993a4;
   align-self: center;
@@ -183,7 +183,7 @@ header button:hover {
   color: #091e42;
 }
 
-.works button {
+.card-1 button {
   align-self: flex-start;
   font-family: 'Inter', sans-serif;
   padding: 12px;
@@ -196,10 +196,10 @@ header button:hover {
   background-color: #f55800;
 }
 
-.works button:hover {
+.card-1 button:hover {
   background-color: #fff5e1;
   color: #f55800;
-  border: 1px solid #F55800;
+  border: 1px solid #f55800;
 }
 
 .works h2 {
@@ -212,7 +212,7 @@ header button:hover {
   line-height: 44px;
   display: flex;
   align-items: center;
-  color: #091E42;
+  color: #091e42;
 }
 
 .repeated-card {
@@ -258,7 +258,7 @@ header button:hover {
   margin-left: 16px;
 }
 
-.repeated-card li {
+.repeated-card ul > * {
   padding: 10px 12px;
   align-self: center;
   display: flex;
@@ -274,6 +274,21 @@ header button:hover {
 
 .repeated-card button {
   align-self: stretch;
+  font-family: 'Inter', sans-serif;
+  padding: 12px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #f55800;
+}
+
+.repeated-card button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
 }
 
 .about {
@@ -303,18 +318,18 @@ header button:hover {
   letter-spacing: 0.37px;
   justify-self: center;
   color: #ff6b00;
-  margin: 120px 24px 0px 0px;
+  margin: 120px 24px 0 0;
 }
 
 .about-me p {
   width: 327px;
   height: 148px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #F4F5F7;
+  color: #f4f5f7;
   justify-self: center;
   margin: 24px 0 24px;
 }
@@ -330,7 +345,12 @@ header button:hover {
   color: #fff;
   background-color: #ff6b00;
   align-self: flex-start;
-  
+}
+
+.about-me button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
 }
 
 .about-me .line {
@@ -359,7 +379,7 @@ header button:hover {
 }
 
 .lists .items {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
