@@ -241,7 +241,6 @@ header button {
 }
 
 .repeated-card ul {
-  display: flex;
   list-style-type: none;
   padding-left: 0;
   gap: 12px;
@@ -249,6 +248,7 @@ header button {
 }
 
 .repeated-card ul > * {
+  float: left;
   padding: 10px 12px;
   align-self: center;
   display: flex;
@@ -259,6 +259,7 @@ header button {
   font-size: 15px;
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
+  margin-right: 7px;
 }
 
 .repeated-card button {
