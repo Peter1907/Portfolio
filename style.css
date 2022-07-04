@@ -159,7 +159,6 @@ header button {
 }
 
 .card-1 ul {
-  display: flex;
   list-style-type: none;
   align-self: flex-start;
   padding-left: 0;
@@ -167,6 +166,7 @@ header button {
 }
 
 .card-1 ul > * {
+  float: left;
   padding: 10px 12px;
   border: 1px solid #8993a4;
   align-self: center;
@@ -177,6 +177,7 @@ header button {
   font-weight: 500;
   font-size: 15px;
   color: #091e42;
+  margin-right: 7px;
 }
 
 .card-1 button {
