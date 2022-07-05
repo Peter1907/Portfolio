@@ -185,7 +185,6 @@ header button {
   align-self: flex-start;
   font-family: 'Inter', sans-serif;
   padding: 12px;
-  border: none;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -269,7 +268,6 @@ header button {
   align-self: stretch;
   font-family: 'Inter', sans-serif;
   padding: 12px;
-  border: none;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -325,7 +323,6 @@ header button {
 .about-me button {
   font-family: 'Inter', sans-serif;
   padding: 12px;
-  border: none;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -377,6 +374,20 @@ header button {
   padding: 0;
 }
 
+* > button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+* > button:active {
+  background-color: #e05304;
+  color: #fff5e1;
+}
+
+header button:hover {
+  background-color: #ca5400af;
+}
 
 .contact-form {
   display: flex;
@@ -434,7 +445,6 @@ header button {
 .contact-form form button {
   font-family: 'Inter', sans-serif;
   padding: 12px;
-  border: none;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -444,6 +454,17 @@ header button {
   border: 1px solid #ff6b00;
 }
 
+.contact-form form button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.contact-form form button:active {
+  background-color: #e05304;
+  color: #fff5e1;
+}
+
 .contact-form .social-media {
   margin-top: 150px;
 }
@@ -451,23 +472,8 @@ header button {
 .bottom-line {
   width: 134px;
   height: 5px;
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 8px;
-}
-
-* > button:hover, .contact-form form button:hover {
-  background-color: #fff5e1;
-  color: #f55800;
-  border: 1px solid #f55800;
-}
-
-* > button:active, .contact-form form button:active {
-  background-color: #e05304;
-  color: #fff5e1;
-}
-
-header button:hover {
-  background-color: #ca5400af;
 }
