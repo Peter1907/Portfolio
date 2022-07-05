@@ -102,6 +102,7 @@ header button {
   padding: 0;
   width: 200px;
   height: 40px;
+  align-items: center;
 }
 
 .social-media li {
@@ -159,7 +160,6 @@ header button {
 }
 
 .card-1 ul {
-  display: flex;
   list-style-type: none;
   align-self: flex-start;
   padding-left: 0;
@@ -167,6 +167,7 @@ header button {
 }
 
 .card-1 ul > * {
+  float: left;
   padding: 10px 12px;
   border: 1px solid #8993a4;
   align-self: center;
@@ -177,19 +178,20 @@ header button {
   font-weight: 500;
   font-size: 15px;
   color: #091e42;
+  margin-right: 7px;
 }
 
 .card-1 button {
   align-self: flex-start;
   font-family: 'Inter', sans-serif;
   padding: 12px;
-  border: none;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  background-color: #f55b00;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
 }
 
 .works h2 {
@@ -241,7 +243,6 @@ header button {
 }
 
 .repeated-card ul {
-  display: flex;
   list-style-type: none;
   padding-left: 0;
   gap: 12px;
@@ -249,6 +250,7 @@ header button {
 }
 
 .repeated-card ul > * {
+  float: left;
   padding: 10px 12px;
   align-self: center;
   display: flex;
@@ -259,19 +261,20 @@ header button {
   font-size: 15px;
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
+  margin-right: 7px;
 }
 
 .repeated-card button {
   align-self: stretch;
   font-family: 'Inter', sans-serif;
   padding: 12px;
-  border: none;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #fff;
   background-color: #f55b00;
+  border: 1px solid #f55b00;
 }
 
 .about {
@@ -320,13 +323,13 @@ header button {
 .about-me button {
   font-family: 'Inter', sans-serif;
   padding: 12px;
-  border: none;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #fff;
   background-color: #ff6b00;
+  border: 1px solid #ff6b00;
   align-self: flex-start;
 }
 
@@ -384,4 +387,95 @@ header button {
 
 header button:hover {
   background-color: #ca5400af;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.contact-form h2 {
+  width: 327px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.contact-form form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+.contact-form form input {
+  border: none;
+  width: 327px;
+  border-bottom: 1px solid #dbd8d7;
+  border-radius: 4px;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.contact-form form textarea {
+  width: 303px;
+  height: 90px;
+  color: #3c3a39;
+  background: #fbf8f7;
+  border: none;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.contact-form form button {
+  font-family: 'Inter', sans-serif;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+}
+
+.contact-form form button:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.contact-form form button:active {
+  background-color: #e05304;
+  color: #fff5e1;
+}
+
+.contact-form .social-media {
+  margin-top: 150px;
+}
+
+.bottom-line {
+  width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
