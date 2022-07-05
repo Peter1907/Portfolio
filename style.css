@@ -427,19 +427,21 @@ header button:hover {
   border-bottom: 1px solid #dbd8d7;
   border-radius: 4px;
   padding: 14px;
+  box-sizing: border-box;
 }
 
 .contact-form form textarea {
+  width: 303px;
+  height: 90px;
+  color: #3c3a39;
   background: #fbf8f7;
   border: none;
-  border-radius: 4px;
-  padding: 14px;
+  padding: 12px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #3c3a39;
 }
 
 .contact-form form button {
