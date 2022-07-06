@@ -42,6 +42,23 @@ header button {
   padding: 7px;
 }
 
+header ul {
+  list-style-type: none;
+  display: none;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #fff;
+  width: 63px;
+  height: 20px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .section-1 {
   display: flex;
   flex-direction: column;
@@ -95,7 +112,7 @@ header button {
   height: 123px;
 }
 
-.social-media {
+.section-1 .social-media {
   display: flex;
   gap: 2.5%;
   margin: 0;
@@ -118,7 +135,7 @@ header button {
   padding: 4px 7px;
 }
 
-.works {
+#works {
   display: grid;
   grid-template-rows: auto auto auto auto auto auto auto auto;
   justify-content: center;
@@ -126,7 +143,7 @@ header button {
   margin-bottom: 120px;
 }
 
-.works h1 {
+#works h1 {
   width: 327px;
   height: 83px;
   font-family: 'Crete Round', sans-serif;
@@ -137,7 +154,7 @@ header button {
   color: #1c1a19;
   border-bottom: 1px solid #212121;
   margin-top: 120px;
-  justify-self: center;
+  text-align: center;
 }
 
 .card-1 {
@@ -194,7 +211,7 @@ header button {
   border: 1px solid #ff6b00;
 }
 
-.works h2 {
+.card-1 h2 {
   width: 327px;
   height: 36px;
   font-family: 'Crete Round', sans-serif;
@@ -277,7 +294,7 @@ header button {
   border: 1px solid #f55b00;
 }
 
-.about {
+#about {
   display: grid;
   background-color: #1c1a19;
   padding: 0;
@@ -389,14 +406,14 @@ header button:hover {
   background-color: #ca5400af;
 }
 
-.contact-form {
+#contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 120px;
 }
 
-.contact-form h2 {
+#contact-form h2 {
   width: 327px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -407,7 +424,7 @@ header button:hover {
   color: #172b4d;
 }
 
-.contact-form form {
+#contact-form form {
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -421,7 +438,7 @@ header button:hover {
   color: #979493;
 }
 
-.contact-form form input {
+#contact-form form input {
   border: none;
   width: 327px;
   border-bottom: 1px solid #dbd8d7;
@@ -430,7 +447,7 @@ header button:hover {
   box-sizing: border-box;
 }
 
-.contact-form form textarea {
+#contact-form form textarea {
   width: 303px;
   height: 90px;
   color: #3c3a39;
@@ -444,7 +461,7 @@ header button:hover {
   line-height: 24px;
 }
 
-.contact-form form button {
+#contact-form form button {
   font-family: 'Inter', sans-serif;
   padding: 12px;
   font-style: normal;
@@ -456,18 +473,18 @@ header button:hover {
   border: 1px solid #ff6b00;
 }
 
-.contact-form form button:hover {
+#contact-form form button:hover {
   background-color: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
 }
 
-.contact-form form button:active {
+#contact-form form button:active {
   background-color: #e05304;
   color: #fff5e1;
 }
 
-.contact-form .social-media {
+#contact-form .social-media {
   margin-top: 150px;
 }
 
@@ -478,4 +495,87 @@ header button:hover {
   border-radius: 10px;
   margin-top: 20px;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 72px;
+  }
+
+  header .name {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+    gap: 32px;
+    margin-left: auto;
+  }
+
+  .section-1 {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 40px;
+    background-image: url('./media/Illustration-header.svg');
+    background-position-y: 0;
+    background-position-x: 109%;
+  }
+
+  .section-1 .text-box {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-1 .social-media {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 0 36px;
+    gap: 10px;
+  }
+
+  .section-1 h1 {
+    width: 400px;
+    height: 160px;
+    font-size: 72px;
+    line-height: 82px;
+    color: #f55800;
+  }
+
+  .section-1 h2 {
+    width: 566px;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  .section-1 p {
+    width: 566px;
+    height: 123px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
 }
