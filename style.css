@@ -678,7 +678,7 @@ header button:hover {
     display: flex;
     align-items: flex-end;
   }
-  
+
   .repeated-card.one {
     background-image: url('./media/img-1-4.jpg');
   }
@@ -687,27 +687,21 @@ header button:hover {
   .repeated-card.five {
     background-image: url('./media/img-2-5.jpg');
   }
-  
+
   .repeated-card.three,
   .repeated-card.six {
     background-image: url('./media/img-3-6.jpg');
   }
-  
+
   .repeated-card.four {
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url('./media/img-1-4.jpg');
   }
-  
+
   .repeated-card p {
     font-size: 17px;
     line-height: 24px;
     width: 337px;
     height: 72px;
-  }
-
-  .repeated-card.one h2,
-  .repeated-card.one p,
-  .repeated-card.one > ul {
-    display: none;
   }
 
   .about-me {
@@ -746,7 +740,7 @@ header button:hover {
     background-position-y: 50%;
   }
 
-  .lists > ul {
+  .lists ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 176px;
@@ -845,6 +839,12 @@ header button:hover {
   }
 
   .bottom-line {
+    display: none;
+  }
+
+  .repeated-card.one h2,
+  .repeated-card.one p,
+  .repeated-card.one ul {
     display: none;
   }
 }
