@@ -774,6 +774,7 @@ header button:hover {
     line-height: 52px;
     color: #262626;
     margin-left: 135px;
+    margin-top: 0;
     text-align: left;
     box-sizing: border-box;
     padding-right: 30px;
@@ -788,7 +789,7 @@ header button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
-    row-gap: 35px;
+    row-gap: 24px;
   }
 
   #desktop-form input {
