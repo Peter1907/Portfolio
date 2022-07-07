@@ -731,7 +731,7 @@ header button:hover {
     color: #f4f5f7;
   }
 
-  .about-me .line {
+  #about .about-me .line {
     width: 1156px;
   }
 
@@ -757,6 +757,12 @@ header button:hover {
   .lists .items li {
     margin: 0;
     align-self: flex-start;
+  }
+
+  .repeated-card.one h2,
+  .repeated-card.one p,
+  .repeated-card.one ul {
+    display: none;
   }
 
   #contact-form {
@@ -840,12 +846,6 @@ header button:hover {
   }
 
   .bottom-line {
-    display: none;
-  }
-
-  .repeated-card.one h2,
-  .repeated-card.one p,
-  .repeated-card.one ul {
     display: none;
   }
 }
