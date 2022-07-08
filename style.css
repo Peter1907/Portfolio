@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -52,6 +56,7 @@ header ul a {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
+  transition: font-size 0.1s ease-in;
 }
 
 .name a {
@@ -59,7 +64,11 @@ header ul a {
   color: #fff;
 }
 
-.section-1 {
+header ul a:hover {
+  font-size: 20px;
+}
+
+#section-1 {
   display: flex;
   flex-direction: column;
   background-color: #1c1a19;
@@ -72,7 +81,7 @@ header ul a {
   background-position: bottom right;
 }
 
-.section-1 h1 {
+#section-1 h1 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -86,7 +95,7 @@ header ul a {
   height: 124px;
 }
 
-.section-1 h2 {
+#section-1 h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -99,7 +108,7 @@ header ul a {
   height: 27px;
 }
 
-.section-1 p {
+#section-1 p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -112,7 +121,7 @@ header ul a {
   height: 123px;
 }
 
-.section-1 .social-media {
+#section-1 .social-media {
   display: flex;
   gap: 2.5%;
   margin: 0;
@@ -355,6 +364,7 @@ header ul a {
   background-color: #ff6b00;
   border: 1px solid #ff6b00;
   align-self: flex-start;
+  transition: all 0.5s ease-in;
 }
 
 .about-me .line {
@@ -538,7 +548,7 @@ header button:hover {
     margin-left: auto;
   }
 
-  .section-1 {
+  #section-1 {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -549,14 +559,14 @@ header button:hover {
     background-position-x: 109%;
   }
 
-  .section-1 .text-box {
+  #section-1 .text-box {
     order: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
-  .section-1 .social-media {
+  #section-1 .social-media {
     flex-direction: column;
     width: auto;
     height: auto;
@@ -564,7 +574,7 @@ header button:hover {
     gap: 10px;
   }
 
-  .section-1 h1 {
+  #section-1 h1 {
     width: 400px;
     height: 160px;
     font-size: 72px;
@@ -572,7 +582,7 @@ header button:hover {
     color: #f55800;
   }
 
-  .section-1 h2 {
+  #section-1 h2 {
     width: 566px;
     height: 24px;
     font-family: 'Inter', sans-serif;
@@ -585,7 +595,7 @@ header button:hover {
     color: #fff;
   }
 
-  .section-1 p {
+  #section-1 p {
     width: 566px;
     height: 123px;
     font-family: 'Inter', sans-serif;
@@ -660,8 +670,10 @@ header button:hover {
     height: 435px;
     gap: 10px;
     margin: 0;
+    transition: transform 0.3s ease-out;
   }
 
+  .repeated-card.one button,
   .repeated-card.two button,
   .repeated-card.three button,
   .repeated-card.four button,
@@ -679,8 +691,9 @@ header button:hover {
     align-items: flex-end;
   }
 
-  .repeated-card.one {
-    background-image: url('./media/img-1-4.jpg');
+  .repeated-card.one,
+  .repeated-card.four {
+    background: url('./media/img-1-4.jpg');
   }
 
   .repeated-card.two,
@@ -693,15 +706,25 @@ header button:hover {
     background-image: url('./media/img-3-6.jpg');
   }
 
-  .repeated-card.four {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url('./media/img-1-4.jpg');
-  }
-
   .repeated-card p {
     font-size: 17px;
     line-height: 24px;
     width: 337px;
     height: 72px;
+  }
+
+  .repeated-card:hover {
+    transform: scale(1.05);
+  }
+
+  .repeated-card:hover > h2,
+  .repeated-card:hover > p,
+  .repeated-card:hover > ul {
+    opacity: 0;
+  }
+
+  .repeated-card:hover > button {
+    display: block;
   }
 
   .about-me {
@@ -757,12 +780,6 @@ header button:hover {
   .lists .items li {
     margin: 0;
     align-self: flex-start;
-  }
-
-  .repeated-card.one h2,
-  .repeated-card.one p,
-  .repeated-card.one ul {
-    display: none;
   }
 
   #contact-form {
