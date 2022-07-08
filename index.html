@@ -14,18 +14,26 @@
     <div id="container">
         <header>
             <div class="name">
-                <a href="./index.html">Peter Beshara</a>
+                <a href="#section-1">Peter Beshara</a>
             </div>
             <button type="button" class="menu"><img src="./media/Union.svg" alt="menu sign">
             </button>
+            <ul>
+                <li><a href="#works">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+                <li><img src="./media/icons/Icon-Mail.svg" alt="mail icon"></li>
+            </ul>
         </header>
-        <section class="section-1">
-            <h1>Hey There. I’m Peter</h1>
-            <h2>I am a Software Developer</h2>
-            <p>I can help you build a product , feature or website 
-                Look through some of my work and experience! If you like what you see and 
-                have a project you need coded, don’t hestiate to contact me.
-            </p>
+        <section id="section-1">
+            <div class="text-box">
+                <h1>Hey There. I’m Peter</h1>
+                <h2>I am a Software Developer</h2>
+                <p>I can help you build a product , feature or website 
+                    Look through some of my work and experience! If you like what you see and 
+                    have a project you need coded, don’t hestiate to contact me.
+                </p>
+            </div>
             <ul class="social-media">
                 <li><a href="https://github.com/Peter1907"><img src="./media/icons/Icon-GitHub.svg" alt="github icon"></a></li>
                 <li><a href="https://www.linkedin.com/in/peter-beshara-b33681241/"><img src="./media/icons/Icon-Linkedin.svg" alt="linkedin icon"></a></li>
@@ -34,104 +42,108 @@
                 <li><a href="https://medium.com/"><img src="./media/icons/Icon-Medium.svg" alt="medium icon"></a></li>
             </ul>
         </section>
-        <section class="works">
-            <h1>My Recent Works</h1>
+        <section id="works">
+            <h1>My Recent Works<span class="line"></span></h1>
             <div class="card-1">
-                <img src="./media/Img-Placeholder.jpg" alt="Image">
-                <h2>Multi-Post Stories</h2>
-                <p>
-                    A daily selection of privately personalized reads; 
-                    no accounts or sign-ups required. has been the industry's standard dummy text 
-                    ever since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-                <ul>
-                    <li>css</li>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button type="button">See Project</button>
+                <img id="card-1-img" src="./media/Img-Placeholder.jpg" alt="Image">
+                <div id="card-1-text">
+                    <h2>Multi-Post Stories</h2>
+                    <p>
+                        A daily selection of privately personalized reads; 
+                        no accounts or sign-ups required. has been the industry's standard dummy text 
+                        ever since the 1500s, when an unknown printer took a standard dummy text.
+                    </p>
+                    <ul>
+                        <li>css</li>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button type="button">See Project</button>
+                </div>
             </div>
-            <div class="repeated-card">
-                <h2>Professional Art Printing Data</h2>
-                <p>
-                    A daily selection of privately personalized reads; 
-                    no accounts or sign-ups required. has been the industry's standard
-                </p>
-                <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button type="button">See Project</button>
-            </div>
-            <div class="repeated-card">
-                <h2>Professional Art Printing Data</h2>
-                <p>
-                    A daily selection of privately personalized reads; 
-                    no accounts or sign-ups required. has been the industry's standard
-                </p>
-                <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button type="button">See Project</button>
-            </div>
-            <div class="repeated-card">
-                <h2>Professional Art Printing Data</h2>
-                <p>
-                    A daily selection of privately personalized reads; 
-                    no accounts or sign-ups required. has been the industry's standard
-                </p>
-                <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button type="button">See Project</button>
-            </div>
-            <div class="repeated-card">
-                <h2>Professional Art Printing Data</h2>
-                <p>
-                    A daily selection of privately personalized reads; 
-                    no accounts or sign-ups required. has been the industry's standard
-                </p>
-                <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button type="button">See Project</button>
-            </div>
-            <div class="repeated-card">
-                <h2>Professional Art Printing Data</h2>
-                <p>
-                    A daily selection of privately personalized reads; 
-                    no accounts or sign-ups required. has been the industry's standard
-                </p>
-                <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button type="button">See Project</button>
-            </div>
-            <div class="repeated-card">
-                <h2>Professional Art Printing Data</h2>
-                <p>
-                    A daily selection of privately personalized reads; 
-                    no accounts or sign-ups required. has been the industry's standard
-                </p>
-                <ul>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <button type="button">See Project</button>
+            <div id="projects-grid">
+                <div class="repeated-card one">
+                    <h2>Professional Art Printing Data</h2>
+                    <p>
+                        A daily selection of privately personalized reads; 
+                        no accounts or sign-ups required. has been the industry's standard
+                    </p>
+                    <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button type="button">See Project</button>
+                </div>
+                <div class="repeated-card two">
+                    <h2>Data Dashboard Healthcare</h2>
+                    <p>
+                        A daily selection of privately personalized reads; 
+                        no accounts or sign-ups required. has been the industry's standard
+                    </p>
+                    <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button type="button">See Project</button>
+                </div>
+                <div class="repeated-card three">
+                    <h2>Website Protfolio</h2>
+                    <p>
+                        A daily selection of privately personalized reads; 
+                        no accounts or sign-ups required. has been the industry's standard
+                    </p>
+                    <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button type="button">See Project</button>
+                </div>
+                <div class="repeated-card four">
+                    <h2>Professional Art Printing Data</h2>
+                    <p>
+                        A daily selection of privately personalized reads; 
+                        no accounts or sign-ups required. has been the industry's standard
+                    </p>
+                    <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button type="button">See Project</button>
+                </div>
+                <div class="repeated-card five">
+                    <h2>Data Dashboard Healthcare</h2>
+                    <p>
+                        A daily selection of privately personalized reads; 
+                        no accounts or sign-ups required. has been the industry's standard
+                    </p>
+                    <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button type="button">See Project</button>
+                </div>
+                <div class="repeated-card six">
+                    <h2>Website Protfolio</h2>
+                    <p>
+                        A daily selection of privately personalized reads; 
+                        no accounts or sign-ups required. has been the industry's standard
+                    </p>
+                    <ul>
+                        <li>html</li>
+                        <li>bootstrap</li>
+                        <li>Ruby</li>
+                    </ul>
+                    <button type="button">See Project</button>
+                </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about">
             <div class="about-me">
                 <h2>About me</h2>
                 <p>
@@ -179,11 +191,18 @@
                 </li>
             </ul>
         </section>
-        <footer class="contact-form">
+        <footer id="contact-form">
             <h2>I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.</h2>
-            <form action="https://formspree.io/f/xknylodz" method="POST">
+            <form id="mobile-form" action="https://formspree.io/f/xknylodz" method="POST">
                 <input type="text" placeholder="Full name" name="user-name" required maxlength="30">
+                <input type="email" placeholder="Email address" name="user-email" required>
+                <textarea name="user-message" placeholder="Enter text here" required maxlength="500"></textarea>
+                <button type="submit">Get in touch</button>
+            </form>
+            <form id="desktop-form" action="https://formspree.io/f/xknylodz" method="POST">
+                <input type="text" placeholder="First name" name="user-first-name" required maxlength="30">
+                <input type="text" placeholder="Last name" name="user-last-name" required maxlength="30">
                 <input type="email" placeholder="Email address" name="user-email" required>
                 <textarea name="user-message" placeholder="Enter text here" required maxlength="500"></textarea>
                 <button type="submit">Get in touch</button>
