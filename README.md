@@ -10,6 +10,17 @@ HTML
 CSS
 Git commands & VSCode(text editor)
 
+## Screenshots
+
+![](./media/Screenshots/Sc01.jpg)
+![](./media/Screenshots/Sc02.jpg)
+![](./media/Screenshots/Sc03.jpg)
+![](./media/Screenshots/Sc04.jpg)
+
+## Link to the Page
+
+https://peter1907.github.io/Portfolio/
+
 ## Authors
 
 👤 **Author1**
@@ -22,7 +33,9 @@ Git commands & VSCode(text editor)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+You can clone the repo using this link (https://github.com/Peter1907/Portfolio.git)
+
+Feel free to check the [issues page](https://github.com/Peter1907/Portfolio/issues).
 
 ## Show your support
 
