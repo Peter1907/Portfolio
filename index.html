@@ -35,11 +35,11 @@
                 </p>
             </div>
             <ul class="social-media">
-                <li><a href="https://github.com/Peter1907"><img src="./media/icons/Icon-GitHub.svg" alt="github icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/peter-beshara-b33681241/"><img src="./media/icons/Icon-Linkedin.svg" alt="linkedin icon"></a></li>
-                <li><a href="https://angel.co/"><img src="./media/icons/Icon-Angelist.svg" alt="angelists icon"></a></li>
-                <li><a href="https://twitter.com/Peter_Beshara_"><img src="./media/icons/Icon-Twitter.svg" alt="twitter icon"></a></li>
-                <li><a href="https://medium.com/"><img src="./media/icons/Icon-Medium.svg" alt="medium icon"></a></li>
+                <li><a href="https://github.com/Peter1907"><img src="./media/icons/GitHub.svg" alt="github icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/peter-beshara-b33681241/"><img src="./media/icons/Linkedin.svg" alt="linkedin icon"></a></li>
+                <li><a href="https://angel.co/"><img src="./media/icons/Angelist.svg" alt="angelists icon"></a></li>
+                <li><a href="https://twitter.com/Peter_Beshara_"><img src="./media/icons/Twitter.svg" alt="twitter icon"></a></li>
+                <li><a href="https://medium.com/"><img src="./media/icons/Medium.svg" alt="medium icon"></a></li>
             </ul>
         </section>
         <section id="works">
@@ -195,16 +195,23 @@
             <h2>I'm always interested in hearing about new projects, 
                 so if you'd like to chat please get in touch.</h2>
             <form id="mobile-form" action="https://formspree.io/f/xknylodz" method="POST">
-                <input type="text" placeholder="Full name" name="user-name" required maxlength="30" label="full name">
-                <input type="email" placeholder="Email address" name="user-email" label="Email address" required>
-                <textarea name="user-message" placeholder="Enter text here" required maxlength="500" label="Enter your text here"></textarea>
+                <label class="label" for="Full-name">Full Name:</label>
+                <input id="Full-name" type="text" placeholder="Full name" name="user-name" required maxlength="30">
+                <label class="label" for="Email">Email Address:</label>
+                <input id="Email" type="email" placeholder="Email address" name="user-email" required>
+                <label class="label" for="Message">Enter your text here:</label>
+                <textarea id="Message" name="user-message" placeholder="Enter text here" required maxlength="500"></textarea>
                 <button type="submit">Get in touch</button>
             </form>
             <form id="desktop-form" action="https://formspree.io/f/xknylodz" method="POST">
-                <input type="text" placeholder="First name" name="user-first-name" required maxlength="30" label="First name">
-                <input type="text" placeholder="Last name" name="user-last-name" required maxlength="30" label="last name">
-                <input type="email" placeholder="Email address" name="user-email" label="email address" required>
-                <textarea name="user-message" placeholder="Enter text here" required maxlength="500" label="Enter your text here"></textarea>
+                <label class="label" for="First-name">First Name:</label>
+                <input id="First-name" type="text" placeholder="First name" name="first-name" required maxlength="30">
+                <label class="label" for="Last-name">Last Name:</label>
+                <input id="Last-name" type="text" placeholder="Last name" name="last-name" required maxlength="30">
+                <label class="label" for="email">Email Address:</label>
+                <input id="email" type="email" placeholder="Email address" name="user-email" required>
+                <label class="label" for="message">Enter your text here:</label>
+                <textarea id="message" name="user-message" placeholder="Enter text here" required maxlength="500"></textarea>
                 <button type="submit">Get in touch</button>
             </form>
             <ul class="social-media">

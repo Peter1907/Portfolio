@@ -524,6 +524,10 @@ header button:hover {
   margin-bottom: 8px;
 }
 
+.label {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 1024px) {
   header {
     height: 72px;
