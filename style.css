@@ -174,8 +174,8 @@ header ul a:hover {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  background-color: #ff6b00;
-  border: 1px solid #ff6b00;
+  background-color: #f06400;
+  border: 1px solid #f06400;
 }
 
 .card-1 h2 {
@@ -286,7 +286,7 @@ header ul a:hover {
   line-height: 88px;
   letter-spacing: 0.37px;
   justify-self: center;
-  color: #ff6b00;
+  color: #f06400;
   margin: 120px 24px 0 0;
 }
 
@@ -310,7 +310,7 @@ header ul a:hover {
   font-size: 56px;
   line-height: 64px;
   letter-spacing: 0.37px;
-  color: #ff6b00;
+  color: #f06400;
   padding: 0;
   margin: 10px;
   width: 327px;
@@ -361,8 +361,8 @@ header ul a:hover {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  background-color: #ff6b00;
-  border: 1px solid #ff6b00;
+  background-color: #f06400;
+  border: 1px solid #f06400;
   align-self: flex-start;
   transition: all 0.5s ease-in;
 }
@@ -490,8 +490,8 @@ header button:hover {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  background-color: #ff6b00;
-  border: 1px solid #ff6b00;
+  background-color: #f06400;
+  border: 1px solid #f06400;
 }
 
 #contact-form form button:hover {
@@ -692,7 +692,7 @@ header button:hover {
 
   .repeated-card:hover > h2,
   .repeated-card:hover > p {
-    opacity: 0;
+    visibility: hidden;
   }
 
   #section-1 {
@@ -770,7 +770,7 @@ header button:hover {
   }
 
   .repeated-card:hover > ul {
-    opacity: 0;
+    visibility: hidden;
   }
 
   .lists .items {
