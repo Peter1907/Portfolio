@@ -1,16 +1,16 @@
 const menuIcon = document.getElementById('menu-button');
 const close = document.getElementById('Close-btn');
 const menu = document.getElementById('menu-container');
-const item = document.querySelector('#menu-container ul')
+const item = document.querySelector('#menu-container ul');
 
-menuIcon.addEventListener('click', function () {
+menuIcon.addEventListener('click', () => {
   menu.classList.toggle('hidden');
-})
+});
 
-close.addEventListener('click', function () {
+close.addEventListener('click', () => {
   menu.classList.toggle('hidden');
-})
+});
 
-item.addEventListener('click', function () {
-  menu.classList.toggle('hidden');
-})
+item.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
