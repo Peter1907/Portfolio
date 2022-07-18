@@ -70,40 +70,6 @@ header ul a {
   flex-direction: column;
 }
 
-#menu-container button {
-  margin: 38px 38px 38px auto;
-  align-self: right;
-  background-color: transparent;
-  border: none;
-}
-
-#menu-container div {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#menu-container ul {
-  list-style-type: none;
-  margin-right: 50px;
-}
-
-#menu-container ul li {
-  border-bottom: 1px solid #6f6c6b;
-  margin-bottom: 35px;
-}
-
-#menu-container ul a {
-  text-decoration: none;
-  color: #fff;
-  width: 63px;
-  height: 20px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px; 
-}
-
 .name a {
   text-decoration: none;
   color: #fff;
@@ -466,6 +432,40 @@ header ul a:hover {
 
 header button:hover {
   background-color: #ca5400af;
+}
+
+#menu-container button {
+  margin: 38px 38px 38px auto;
+  align-self: right;
+  background-color: transparent;
+  border: none;
+}
+
+#menu-container div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#menu-container ul {
+  list-style-type: none;
+  margin-right: 50px;
+}
+
+#menu-container ul li {
+  border-bottom: 1px solid #6f6c6b;
+  margin-bottom: 35px;
+}
+
+#menu-container ul a {
+  text-decoration: none;
+  color: #fff;
+  width: 63px;
+  height: 20px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 #contact-form {
