@@ -12,5 +12,5 @@ close.addEventListener('click', () => {
 });
 
 item.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
+  menu.classList.toggle('hidden');
+});
