@@ -595,7 +595,7 @@ header button:hover {
     display: none;
   }
 
-  header ul {
+  .desktop-links {
     display: flex;
     gap: 32px;
     margin-left: auto;
