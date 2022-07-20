@@ -20,41 +20,45 @@ const cards = [
     Id: 0,
     header: 'Multi-Post Stories',
     list: ['css', 'html', 'bootstrap', 'Ruby'],
-    img: './media/Img-Placeholder.jpg'
+    img: './media/Img-Placeholder.jpg',
   },
   {
     Id: 1,
     header: 'Professional Art Printing Data',
     list: ['html', 'bootstrap', 'Ruby'],
-    img: './media/Snapshoot.jpg'
+    img: './media/Snapshoot.jpg',
   },
   {
     Id: 2,
     header: 'Data Dashboard Healthcare',
     list: ['html', 'bootstrap', 'Ruby'],
-    img: './media/Snapshoot.jpg'
-  },{
+    img: './media/Snapshoot.jpg',
+  },
+  {
     Id: 3,
-    header: 'Professional Art Printing Data',
+    header: 'Website Protfolio',
     list: ['html', 'bootstrap', 'Ruby'],
-    img: './media/Snapshoot.jpg'
-  },{
+    img: './media/Snapshoot.jpg',
+  },
+  {
     Id: 4,
     header: 'Professional Art Printing Data',
     list: ['html', 'bootstrap', 'Ruby'],
-    img: './media/Snapshoot.jpg'
-  },{
+    img: './media/Snapshoot.jpg',
+  },
+  {
     Id: 5,
-    header: 'Professional Art Printing Data',
+    header: 'Data Dashboard Healthcare',
     list: ['html', 'bootstrap', 'Ruby'],
-    img: './media/Snapshoot.jpg'
-  },{
+    img: './media/Snapshoot.jpg',
+  },
+  {
     Id: 6,
-    header: 'Professional Art Printing Data',
+    header: 'Website Protfolio',
     list: ['html', 'bootstrap', 'Ruby'],
-    img: './media/Snapshoot.jpg'
+    img: './media/Snapshoot.jpg',
   }
-]
+];
 
 const popUp = document.querySelector('.pop-up');
 const closeSign = document.querySelector('#pop-up-head > span');
@@ -65,26 +69,25 @@ closeSign.addEventListener('click', () => {
   popUp.classList.toggle('hidden');
 });
 
-const seeProjectBtn = Array.from(document.querySelectorAll('.pop'));
-for (let i in seeProjectBtn) {
-  seeProjectBtn[i].addEventListener('click', () => {
-    const data = cards[i];
+const seeProjectBtn = document.querySelectorAll('.pop');
+seeProjectBtn.forEach((btn, Id) => {
+  btn.addEventListener('click', () => {
+    const data = cards[Id];
     document.querySelector('#pop-up-head > h2').textContent = data.header;
     document.querySelector('#pop-up-body > img').src = data.img;
     items.innerHTML = '';
-    data.list.forEach(ele => {
-      let item = document.createElement('li')
+    data.list.forEach((ele) => {
+      const item = document.createElement('li');
       item.textContent = ele;
       items.appendChild(item);
-
-    })
+    });
 
     overlay.classList.toggle('hidden');
     popUp.classList.toggle('hidden');
-  }) 
-}
+  });
+});
 
 overlay.addEventListener('click', () => {
   overlay.classList.toggle('hidden');
   popUp.classList.toggle('hidden');
-})
+});
