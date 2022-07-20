@@ -9,7 +9,7 @@ const msgs = document.querySelectorAll('small');
 
 btns.forEach((ele, i) => {
   ele.addEventListener('click', (event) => {
-    const {value} = emails[i];
+    const { value } = emails[i];
     const lowerCase = value.toLowerCase();
     if (value !== lowerCase) {
       event.preventDefault();
