@@ -492,6 +492,16 @@ header button:hover {
   padding-left: 0;
 }
 
+.buttons  a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.buttons  a:hover {
+  text-decoration: none;
+  color: #f55800;
+}
+
 #menu-container ul {
   list-style-type: none;
   margin-right: 50px;
@@ -686,7 +696,8 @@ header button:hover {
   left: 0;
   background-color: rgb(0, 0, 0, 0.6);
   z-index: 1;
-  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 
 @media screen and (min-width: 1024px) {
@@ -769,7 +780,8 @@ header button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 37px;
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
   }
 
   .repeated-card {
@@ -930,7 +942,8 @@ header button:hover {
   .lists ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 176px;
+    -moz-column-gap: 176px;
+         column-gap: 176px;
     text-align: left;
   }
 
@@ -979,7 +992,8 @@ header button:hover {
   #desktop-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
     row-gap: 24px;
   }
 
