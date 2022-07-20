@@ -1,4 +1,4 @@
-const forms = document.forms;
+const forms = document.querySelectorAll('form');
 const firstEmail = forms[0].elements[1];
 const secEmail = forms[1].elements[2];
 const firstBtn = forms[0].elements[3];
@@ -11,9 +11,9 @@ btns.forEach((ele, i) => {
   ele.addEventListener('click', (event) => {
     const value = emails[i].value;
     const lowerCase = value.toLowerCase();
-    if (value !== lowerCase){
+    if (value !== lowerCase) {
       event.preventDefault();
       msgs[i].textContent = 'Please use only lower-case letters in the email field';
     }
-  })
-})
+  });
+});
