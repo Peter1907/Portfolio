@@ -75,6 +75,23 @@ header ul a {
   color: #fff;
 }
 
+.buttons a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+  text-decoration: none;
+}
+
 header ul a:hover {
   font-size: 20px;
 }
@@ -441,33 +458,17 @@ header ul a:hover {
   color: #fff5e1;
 }
 
-.buttons button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 12px;
-  gap: 12px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
-  background-color: #ff6b00;
-  border: 1px solid #ff6b00;
-}
-
 header button:hover {
   background-color: #ca5400af;
 }
 
-.buttons > button:hover {
+.buttons > a:hover {
   background-color: #fff5e1;
   color: #f55800;
   border: 1px solid #f55800;
 }
 
-.buttons > button:active {
+.buttons > a:active {
   background-color: #e05304;
   color: #fff5e1;
 }
@@ -492,12 +493,7 @@ header button:hover {
   padding-left: 0;
 }
 
-.buttons  a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.buttons  a:hover {
+.buttons a:hover {
   text-decoration: none;
   color: #f55800;
 }
@@ -697,7 +693,7 @@ header button:hover {
   background-color: rgb(0, 0, 0, 0.6);
   z-index: 1;
   -webkit-backdrop-filter: blur(7px);
-          backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
 }
 
 @media screen and (min-width: 1024px) {
@@ -781,7 +777,7 @@ header button:hover {
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 37px;
     -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
   }
 
   .repeated-card {
@@ -943,7 +939,7 @@ header button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     -moz-column-gap: 176px;
-         column-gap: 176px;
+    column-gap: 176px;
     text-align: left;
   }
 
@@ -993,7 +989,7 @@ header button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 24px;
-         column-gap: 24px;
+    column-gap: 24px;
     row-gap: 24px;
   }
 

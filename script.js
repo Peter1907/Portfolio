@@ -97,9 +97,8 @@ seeProjectBtn.forEach((btn, Id) => {
     document.querySelector('#pop-up-head > h2').textContent = data.header;
     document.querySelector('#pop-up-body > img').src = data.img;
     document.querySelector('#pop-up-text p').textContent = data.text;
-    document.querySelector('.buttons :nth-child(1) > a').href = data.liveDemo;
-    document.querySelector('.buttons :nth-child(2) > a').href = data.srcCode;
-
+    document.querySelector('#demo').href = data.liveDemo;
+    document.querySelector('#src').href = data.srcCode;
 
     items.innerHTML = '';
     data.list.forEach((ele) => {
