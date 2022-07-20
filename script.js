@@ -57,7 +57,7 @@ const cards = [
     header: 'Website Protfolio',
     list: ['html', 'bootstrap', 'Ruby'],
     img: './media/Snapshoot.jpg',
-  }
+  },
 ];
 
 const popUp = document.querySelector('.pop-up');
