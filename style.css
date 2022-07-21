@@ -745,6 +745,7 @@ header button:hover {
     flex-direction: row;
     gap: 24px;
     flex-shrink: auto;
+    grid-column: 1/4;
   }
 
   #card-1-img {
