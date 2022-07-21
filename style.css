@@ -629,6 +629,15 @@ header button:hover {
   display: none;
 }
 
+small {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #f00;
+}
+
 .pop-up {
   position: fixed;
   max-width: 330px;
@@ -992,6 +1001,10 @@ header button:hover {
     -moz-column-gap: 24px;
     column-gap: 24px;
     row-gap: 24px;
+  }
+
+  #desktop-form small {
+    grid-column: 1/3;
   }
 
   #desktop-form input {
