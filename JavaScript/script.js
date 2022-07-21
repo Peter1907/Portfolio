@@ -15,7 +15,6 @@ item.addEventListener('click', () => {
   menu.classList.toggle('hidden');
 });
 
-
 const cards = [
   {
     Id: 0,

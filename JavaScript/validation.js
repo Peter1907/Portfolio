@@ -35,13 +35,13 @@ if (parseData1) {
   fullName.value = storedData1['Full-name'];
   firstEmail.value = storedData1.Email;
   text1.value = storedData1.Message;
-};
+}
 
 changables1.forEach((ele) => {
   ele.addEventListener('input', (Event) => {
     const { id, value } = Event.target;
     storedData1[id] = value;
-    const data1 =JSON.stringify(storedData1);
+    const data1 = JSON.stringify(storedData1);
     window.localStorage.setItem('Data1', data1);
   });
 });
@@ -55,12 +55,11 @@ if (parseData2) {
   lName.value = parseData2['Last-name'];
   secEmail.value = parseData2.email;
   text2.value = parseData2.message;
-};
-
+}
 
 changables2.forEach((ele) => {
   ele.addEventListener('input', (event) => {
-    const {id,value}= event.target;
+    const { id, value } = event.target;
     storedData2[id] = value;
     const data2 = JSON.stringify(storedData2);
     window.localStorage.setItem('Data2', data2);
