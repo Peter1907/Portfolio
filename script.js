@@ -136,8 +136,7 @@ projectsHtml.innerHTML
 +   '<ul></ul>'
 +   '<button class="pop" type="button">See Project</button>'
 + '</div>'
-+ '</div>'
-;
++ '</div>';
 
 const projects = document.querySelectorAll('.dynamic');
 projects[0].querySelector('img').src = cards[0].img;
