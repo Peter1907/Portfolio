@@ -75,6 +75,23 @@ header ul a {
   color: #fff;
 }
 
+.buttons a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #ff6b00;
+  border: 1px solid #ff6b00;
+  text-decoration: none;
+}
+
 header ul a:hover {
   font-size: 20px;
 }
@@ -97,6 +114,17 @@ header ul a:hover {
   border-radius: 5px;
   padding: 4px 7px;
   list-style-type: none;
+}
+
+.pop-up ul > li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+  padding: 10px 12px;
+  border: 1px solid #979493;
 }
 
 .social-media li:hover {
@@ -434,6 +462,17 @@ header button:hover {
   background-color: #ca5400af;
 }
 
+.buttons > a:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
+}
+
+.buttons > a:active {
+  background-color: #e05304;
+  color: #fff5e1;
+}
+
 #menu-container button {
   margin: 38px 38px 38px auto;
   align-self: right;
@@ -444,6 +483,19 @@ header button:hover {
 #menu-container div {
   display: flex;
   justify-content: flex-end;
+}
+
+.pop-up ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.buttons a:hover {
+  text-decoration: none;
+  color: #f55800;
 }
 
 #menu-container ul {
@@ -570,7 +622,7 @@ header button:hover {
 }
 
 .label {
-  visibility: hidden;
+  display: none;
 }
 
 .hidden {
@@ -584,6 +636,73 @@ small {
   font-size: 15px;
   line-height: 24px;
   color: #f00;
+}
+
+.pop-up {
+  position: fixed;
+  max-width: 330px;
+  min-width: 327px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 5;
+  padding: 20px;
+  box-shadow: 5px 5px 25px black;
+}
+
+#pop-up-img {
+  display: flex;
+  max-width: 325px;
+}
+
+#pop-up-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#pop-up-head h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 20px auto 20px 0;
+}
+
+#pop-up-head span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 30px 15px;
+  cursor: pointer;
+}
+
+#pop-up-text p {
+  width: 320px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 1;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
 }
 
 @media screen and (min-width: 1024px) {
@@ -635,6 +754,7 @@ small {
     flex-direction: row;
     gap: 24px;
     flex-shrink: auto;
+    grid-column: 1/4;
   }
 
   #card-1-img {
@@ -666,6 +786,7 @@ small {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 37px;
+    -moz-column-gap: 24px;
     column-gap: 24px;
   }
 
@@ -827,6 +948,7 @@ small {
   .lists ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    -moz-column-gap: 176px;
     column-gap: 176px;
     text-align: left;
   }
@@ -876,6 +998,7 @@ small {
   #desktop-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 24px;
     column-gap: 24px;
     row-gap: 24px;
   }
@@ -933,5 +1056,36 @@ small {
 
   .bottom-line {
     display: none;
+  }
+
+  .pop-up {
+    width: 1156px;
+    min-width: 1000px;
+    padding: 27px 24px;
+  }
+
+  #pop-up-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  #pop-up-img {
+    max-width: 660px;
+  }
+
+  #pop-up-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #pop-up-text p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
   }
 }
