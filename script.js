@@ -89,54 +89,54 @@ const cards = [
 ];
 
 const projectsHtml = document.getElementById('works');
-projectsHtml.innerHTML +=
-'<div id="projects-grid">'+
-    '<div class="card-1 dynamic">'+
-        '<img id="card-1-img" src="#" alt="image containing a dancer"></img>'+
-        '<div id="card-1-text">'+
-            '<h2></h2>'+
-            '<p></p>'+
-            '<ul></ul>'+
-            '<button class="pop" type="button">See Project</button>'+
-        '</div>'+
-    '</div>'+
-    '<div class="repeated-card one dynamic">'+
-        '<h2></h2>'+
-        '<p></p>'+
-        '<ul></ul>'+
-        '<button class="pop" type="button">See Project</button>'+
-    '</div>'+
-    '<div class="repeated-card two dynamic">'+
-        '<h2></h2>'+
-        '<p></p>'+
-        '<ul></ul>'+
-        '<button class="pop" type="button">See Project</button>'+
-    '</div>'+
-    '<div class="repeated-card three dynamic">'+
-        '<h2></h2>'+
-        '<p></p>'+
-        '<ul></ul>'+
-        '<button class="pop" type="button">See Project</button>'+
-    '</div>'+
-    '<div class="repeated-card four dynamic">'+
-        '<h2></h2>'+
-        '<p></p>'+
-        '<ul></ul>'+
-        '<button class="pop" type="button">See Project</button>'+
-    '</div>'+
-    '<div class="repeated-card five dynamic">'+
-        '<h2></h2>'+
-        '<p></p>'+
-        '<ul></ul>'+
-        '<button class="pop" type="button">See Project</button>'+
-    '</div>'+
-    '<div class="repeated-card six dynamic">'+
-        '<h2></h2>'+
-        '<p></p>'+
-        '<ul></ul>'+
-        '<button class="pop" type="button">See Project</button>'+
-    '</div>'+
-'</div>'
+projectsHtml.innerHTML 
++= '<div id="projects-grid">'
++ '<div class="card-1 dynamic">'
++   '<img id="card-1-img" src="#" alt="image containing a dancer"></img>'
++   '<div id="card-1-text">'
++       '<h2></h2>'
++       '<p></p>'
++       '<ul></ul>'
++       '<button class="pop" type="button">See Project</button>'
++   '</div>'
++ '</div>'
++ '<div class="repeated-card one dynamic">'
++   '<h2></h2>'
++   '<p></p>'
++   '<ul></ul>'
++   '<button class="pop" type="button">See Project</button>'
++ '</div>'
++ '<div class="repeated-card two dynamic">'
++   '<h2></h2>'
++   '<p></p>'
++   '<ul></ul>'
++   '<button class="pop" type="button">See Project</button>'
++ '</div>'
++ '<div class="repeated-card three dynamic">'
++   '<h2></h2>'
++   '<p></p>'
++   '<ul></ul>'
++   '<button class="pop" type="button">See Project</button>'
++ '</div>'
++ '<div class="repeated-card four dynamic">'
++   '<h2></h2>'
++   '<p></p>'
++   '<ul></ul>'
++   '<button class="pop" type="button">See Project</button>'
++ '</div>'
++ '<div class="repeated-card five dynamic">'
++   '<h2></h2>'
++   '<p></p>'
++   '<ul></ul>'
++   '<button class="pop" type="button">See Project</button>'
++ '</div>'
++ '<div class="repeated-card six dynamic">'
++   '<h2></h2>'
++   '<p></p>'
++   '<ul></ul>'
++   '<button class="pop" type="button">See Project</button>'
++ '</div>'
++ '</div>'
 ;
 
 const projects = document.querySelectorAll('.dynamic');
