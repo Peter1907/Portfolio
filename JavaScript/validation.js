@@ -11,8 +11,8 @@ const text2 = forms[1].elements[3];
 const btns = [firstBtn, secBtn];
 const emails = [firstEmail, secEmail];
 
-const changables1 = [fullName,firstEmail,text1];
-const changables2 = [fName,lName,secEmail,text2];
+const changables1 = [fullName, firstEmail, text1];
+const changables2 = [fName, lName, secEmail, text2];
 
 const msgs = document.querySelectorAll('small');
 
@@ -27,27 +27,42 @@ btns.forEach((ele, i) => {
   });
 });
 
+const savedData1 = window.localStorage.getItem('Data1');
+const parseData1 = savedData1 ? JSON.parse(savedData1) : false;
+const storedData1 = parseData1 || {};
 
-const savedData = window.localStorage.getItem('Data2');
-const parseData = savedData ? JSON.parse(savedData) : false;
+if (parseData1) {
+  fullName.value = storedData1['Full-name'];
+  firstEmail.value = storedData1.Email;
+  text1.value = storedData1.Message;
+};
 
-if(parseData){
-  fName.value = parseData["First-name"];
-  lName.value = parseData["Last-name"];
-  secEmail.value = parseData.email;
-  text2.value = parseData.message;
-}
+changables1.forEach((ele) => {
+  ele.addEventListener('input', (Event) => {
+    const { id, value } = Event.target;
+    storedData1[id] = value;
+    const data1 =JSON.stringify(storedData1);
+    window.localStorage.setItem('Data1', data1);
+  });
+});
 
-const stordData2 = parseData || {};
+const savedData2 = window.localStorage.getItem('Data2');
+const parseData2 = savedData2 ? JSON.parse(savedData2) : false;
+const storedData2 = parseData2 || {};
 
-changables2.forEach(ele=>{
-  ele.addEventListener('input',(event)=>{
+if (parseData2) {
+  fName.value = parseData2['First-name'];
+  lName.value = parseData2['Last-name'];
+  secEmail.value = parseData2.email;
+  text2.value = parseData2.message;
+};
+
+
+changables2.forEach((ele) => {
+  ele.addEventListener('input', (event) => {
     const {id,value}= event.target;
-    stordData2[id] = value;
-    const data2 = JSON.stringify(stordData2);
-    window.localStorage.setItem('Data2',data2);
-  })
-})
-
-
-
+    storedData2[id] = value;
+    const data2 = JSON.stringify(storedData2);
+    window.localStorage.setItem('Data2', data2);
+  });
+});
