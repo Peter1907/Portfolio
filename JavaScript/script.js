@@ -142,7 +142,7 @@ const projects = document.querySelectorAll('.dynamic');
 projects[0].querySelector('img').src = cards[0].img;
 projects.forEach((ele, Id) => {
   const Data = cards[Id];
-  ele.querySelector('h2').textContent = Data.header;
+  ele.querySelector('h2').textContent = Data.list;
   ele.querySelector('p').textContent = Data.text;
   const projectList = ele.querySelector('ul');
   Data.list.forEach((ele) => {
@@ -178,12 +178,12 @@ seeProjectBtn.forEach((btn, Id) => {
       items.appendChild(item);
     });
 
-    overlay.classList.toggle('hidden');
-    popUp.classList.toggle('hidden');
+    overlay.classList.remove('hidden');
+    popUp.classList.add('hidden');
   });
 });
 
 overlay.addEventListener('click', () => {
-  overlay.classList.toggle('hidden');
-  popUp.classList.toggle('hidden');
+  overlay.classList.remove('hidden');
+  popUp.classList.add('hidden');
 });
