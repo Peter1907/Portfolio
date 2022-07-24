@@ -741,12 +741,12 @@ small {
     color: #fff;
     scale: 0;
     padding: 20px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: flex;
     background-color: #1c1a19;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 5px 5px 25px rgb(228, 221, 215);
+    box-shadow: 0 0 15px #f06400;
   }
 
   .anon-msg h2 {
