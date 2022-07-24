@@ -1,13 +1,13 @@
 const forms = document.querySelectorAll('form');
-const firstEmail = forms[0].elements[1];
-const fullName = forms[0].elements[0];
-const secEmail = forms[1].elements[2];
-const fName = forms[1].elements[0];
-const lName = forms[1].elements[1];
-const firstBtn = forms[0].elements[3];
-const secBtn = forms[1].elements[4];
-const text1 = forms[0].elements[2];
-const text2 = forms[1].elements[3];
+const firstEmail = forms[1].elements[1];
+const fullName = forms[1].elements[0];
+const secEmail = forms[2].elements[2];
+const fName = forms[2].elements[0];
+const lName = forms[2].elements[1];
+const firstBtn = forms[1].elements[3];
+const secBtn = forms[2].elements[4];
+const text1 = forms[1].elements[2];
+const text2 = forms[2].elements[3];
 const btns = [firstBtn, secBtn];
 const emails = [firstEmail, secEmail];
 

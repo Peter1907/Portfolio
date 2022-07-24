@@ -158,6 +158,7 @@ const overlay = document.querySelector('.overlay');
 const items = document.querySelector('.pop-up > ul');
 closeSign.addEventListener('click', () => {
   overlay.classList.toggle('hidden');
+  document.querySelector('body').style.overflow = 'auto';
   popUp.classList.toggle('hidden');
 });
 
@@ -179,11 +180,16 @@ seeProjectBtn.forEach((btn, Id) => {
     });
 
     overlay.classList.toggle('hidden');
+    document.querySelector('body').style.overflow = 'hidden';
     popUp.classList.toggle('hidden');
   });
 });
 
 overlay.addEventListener('click', () => {
   overlay.classList.toggle('hidden');
-  popUp.classList.toggle('hidden');
+  document.querySelector('body').style.overflow = 'auto';
+  popUp.classList.add('hidden');
+  msg.style.scale = '0';
+  msg.style.left = mailIcon.offsetLeft + 8 + 'px';
+  msg.style.top = mailIcon.offsetHeight + 4 + 'px';
 });

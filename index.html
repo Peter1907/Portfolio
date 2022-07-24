@@ -22,6 +22,18 @@
                 <li><a href="#contact-form">Contact</a></li>
             </ul>
         </div>
+        <div class="anon-msg">
+            <h2>Like what you see? Or maybe you don't..<br>What are you waiting for?<br>
+                You can send me an anonymous message expressing
+                your love or contempt!</h2>
+            <form id="msg" action="https://formspree.io/f/xknylodz" method="POST">
+                <textarea name="Anonymous message" placeholder="Type your message here" required></textarea>
+                <div class="msg-btns">
+                    <button type="submit">Send</button>
+                    <button class="dismiss" type="button">Dismiss</button>
+                </div>
+            </form>
+        </div>
         <header>
             <div class="name">
                 <a href="#section-1">Peter Beshara</a>
@@ -161,5 +173,6 @@
     </div>
     <script src="./JavaScript/script.js"></script>
     <script src="./JavaScript/validation.js"></script>
+    <script src="./JavaScript/msg.js"></script>
 </body>
 </html>
