@@ -185,6 +185,10 @@ seeProjectBtn.forEach((btn, Id) => {
   });
 });
 
+const mailIcon = document.querySelector('.desktop-links > li > img');
+const msg = document.querySelector('.anon-msg');
+const dismissBtn = document.querySelector('.dismiss');
+
 overlay.addEventListener('click', () => {
   overlay.classList.toggle('hidden');
   document.querySelector('body').style.overflow = 'auto';
@@ -193,10 +197,6 @@ overlay.addEventListener('click', () => {
   msg.style.right = 0;
   msg.style.top = 0;
 });
-
-const mailIcon = document.querySelector('.desktop-links > li > img');
-const msg = document.querySelector('.anon-msg');
-const dismissBtn = document.querySelector('.dismiss');
 
 msg.style.position = 'absolute';
 msg.style.right = 0;
