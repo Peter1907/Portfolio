@@ -194,13 +194,13 @@ overlay.addEventListener('click', () => {
   document.querySelector('body').style.overflow = 'auto';
   popUp.classList.add('hidden');
   msg.style.scale = '0';
-  msg.style.right = 0;
-  msg.style.top = 0;
+  msg.style.right = '-17%';
+  msg.style.top = '-10%';
 });
 
 msg.style.position = 'absolute';
-msg.style.right = 0;
-msg.style.top = 0;
+msg.style.right = '-17%';
+msg.style.top = '-10%';
 
 mailIcon.addEventListener('click', () => {
   msg.style.position = 'fixed';
@@ -216,6 +216,6 @@ dismissBtn.addEventListener('click', () => {
   overlay.classList.toggle('hidden');
   document.querySelector('body').style.overflow = 'auto';
   msg.style.scale = 0;
-  msg.style.right = 0;
-  msg.style.top = 0;
+  msg.style.right = '-17%';
+  msg.style.top = '-10%';
 });
