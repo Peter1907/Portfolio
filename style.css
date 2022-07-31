@@ -13,7 +13,7 @@ body {
 }
 
 .anon-msg {
-  scale: 0;
+  transform: scale(0);
 }
 
 header {
@@ -102,11 +102,11 @@ header ul a:hover {
 }
 
 header ul img {
-  transition: scale 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 header ul img:hover {
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 #section-1 {
@@ -743,7 +743,6 @@ small {
   .anon-msg {
     z-index: 10;
     color: #fff;
-    scale: 0;
     padding: 20px;
     transition: all 0.3s ease-in-out;
     display: flex;
