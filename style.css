@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 #container {
   display: flex;
   flex-direction: column;
@@ -97,12 +101,41 @@ header ul a {
   text-decoration: none;
 }
 
+.about-me a {
+  font-family: 'Inter', sans-serif;
+  padding: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #f06400;
+  border: 1px solid #f06400;
+  align-self: flex-start;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+}
+
 header ul a:hover {
-  font-size: 20px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.about-me a:hover {
+  background-color: #fff5e1;
+  color: #f55800;
+  border: 1px solid #f55800;
 }
 
 header ul img {
   transition: all 0.2s ease-in-out;
+}
+
+.repeated-card img {
+  position: absolute;
+  width: 327px;
+  height: 386px;
+  z-index: -1;
 }
 
 header ul img:hover {
@@ -127,6 +160,7 @@ header ul img:hover {
   border-radius: 5px;
   padding: 4px 7px;
   list-style-type: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .pop-up ul > li {
@@ -140,10 +174,19 @@ header ul img:hover {
   border: 1px solid #979493;
 }
 
+.lists .items li {
+  margin: 30px;
+  padding: 0;
+}
+
 .social-media li:hover {
-  background-color: #ca5400af;
-  border-radius: 5px;
-  padding: 4px 7px;
+  transform: scale(1.1);
+  filter: drop-shadow(3px 4px 2px rgba(0, 0, 0, 0.151));
+}
+
+.social-media.main li:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(3px 4px 2px #ff6a0062);
 }
 
 #works {
@@ -171,12 +214,12 @@ header ul img:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 #card-1-img {
   width: 327px;
-  height: 237px;
+  max-height: 350px;
 }
 
 #card-1-text {
@@ -186,7 +229,6 @@ header ul img:hover {
 
 .card-1 p {
   width: 327px;
-  height: 147px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -244,12 +286,14 @@ header ul img:hover {
 }
 
 .repeated-card {
+  position: relative;
   width: 327px;
   height: 386px;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: url('./media/Img-Placeholder02.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.87));
 }
 
 .repeated-card h2 {
@@ -267,7 +311,6 @@ header ul img:hover {
 
 .repeated-card p {
   width: 295px;
-  height: 87px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -344,7 +387,6 @@ header ul img:hover {
 
 .about-me p {
   width: 327px;
-  height: 148px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -352,7 +394,7 @@ header ul img:hover {
   line-height: 24px;
   color: #f4f5f7;
   justify-self: center;
-  margin: 24px 0 24px;
+  margin: 24px 0 0 0;
 }
 
 #section-1 h1 {
@@ -405,20 +447,6 @@ header ul img:hover {
   align-items: center;
 }
 
-.about-me button {
-  font-family: 'Inter', sans-serif;
-  padding: 12px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
-  background-color: #f06400;
-  border: 1px solid #f06400;
-  align-self: flex-start;
-  transition: all 0.5s ease-in;
-}
-
 .about-me .line {
   border: 1px solid #fff;
   width: 327;
@@ -453,11 +481,6 @@ header ul img:hover {
   text-align: center;
   color: #fff;
   margin-top: 0;
-}
-
-.lists .items li {
-  margin: 30px;
-  padding: 0;
 }
 
 * > button:hover {
@@ -667,6 +690,7 @@ small {
 #pop-up-img {
   display: flex;
   max-width: 325px;
+  flex-shrink: 0;
 }
 
 #pop-up-head {
@@ -880,7 +904,6 @@ small {
 
   .card-1 p {
     width: 448px;
-    height: 140px;
     font-size: 20px;
     line-height: 28px;
     margin: 0;
@@ -900,6 +923,11 @@ small {
     gap: 10px;
     margin: 0;
     transition: transform 0.3s ease-out;
+  }
+
+  .repeated-card img {
+    width: 369px;
+    height: 435px;
   }
 
   .repeated-card.one button,
@@ -922,24 +950,23 @@ small {
 
   .repeated-card.one,
   .repeated-card.four {
-    background: url('./media/img-1-4.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.87));
   }
 
   .repeated-card.two,
   .repeated-card.five {
-    background-image: url('./media/img-2-5.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.87));
   }
 
   .repeated-card.three,
   .repeated-card.six {
-    background-image: url('./media/img-3-6.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.87));
   }
 
   .repeated-card p {
     font-size: 17px;
     line-height: 24px;
     width: 337px;
-    height: 72px;
   }
 
   .repeated-card:hover {
@@ -1176,6 +1203,7 @@ small {
 
   #pop-up-img {
     max-width: 660px;
+    align-self: center;
   }
 
   #pop-up-text {
