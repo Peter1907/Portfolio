@@ -47,7 +47,8 @@ const cards = [
     list: ['React', 'Redux', 'CSS'],
     img: './media/projects/RPSs.jpg',
     popupImg: './media/projects/RPS.jpg',
-    popText: ' Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book .It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    popText: `<p>This is a project I built to practice my React/Redux skills. I've built it using React, Redux, CSS & Webpack. You can also check the GitHub repository for more technichal info.</p>
+    <p>The initial design was provided by "<a href="https://www.frontendmentor.io/" target="_blank" rel="noopener">Frontend Mentor</a>"</p>`,
     text: 'A game that I built as an excersice for using React & Rdeux. It has a responsive design so that it would work on any device.',
     srcCode: 'https://github.com/Peter1907/rock-paper-scissors',
     liveDemo: 'https://pb-rpsls-game.netlify.app/',
@@ -82,8 +83,9 @@ const cards = [
     list: ['React', 'CSS', 'JavaScript'],
     img: './media/projects/MMs.jpg',
     popupImg: './media/projects/MM.jpg',
-    popText: ' Lorem Ipsum is simply dummy text of the printing and typesetting industryLorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book .It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    popText: `<p>This project was built using React & JavaScript. Making reusable functional based components, integrating the logic for calculations & Using React hooks.</p>
+    <p>I also used an API to generate & render a random math-related quote.</p>`,
+    text: 'A desktop website built using React, JavaScript, HTML & CSS. It features a simple calculator & a random math quote generator.',
     srcCode: 'https://github.com/Peter1907/math-magicians',
     liveDemo: 'https://papaya-mermaid-965475.netlify.app/',
   },
