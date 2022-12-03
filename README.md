@@ -1,14 +1,14 @@
 # Project Name
-Portfolio
+My Portfolio
 
 # Description the project.
-Building a personal portfolio site.
+Building a personal portfolio site demonstrating my skills with multiple projects.
 
 ## Built With
 
 HTML
 CSS
-Git commands & VSCode(text editor)
+JavaScript
 
 ## Screenshots
 
@@ -27,7 +27,7 @@ https://peter1907.github.io/Portfolio/
 
 - GitHub: [@Peter1907](https://github.com/Peter1907)
 - Twitter: [@Peter_Beshara_](https://twitter.com/Peter_Beshara_)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/peter-beshara-b33681241/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/peter-nady-beshara/)
 
 ## 🤝 Contributing
 
@@ -44,8 +44,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- <a href="https://www.flaticon.com/free-icons/portfolio" title="portfolio icons">Portfolio icons created by Freepik - Flaticon</a>
 
 ## 📝 License
 
